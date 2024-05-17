@@ -4,6 +4,8 @@
   --secudario: #8d99ae;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -22,31 +24,84 @@ header {
   justify-content: space-between;
   background-color: var(--primario);
   height: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 img {
   margin-left: 0.25rem;
-  height: 10vh;
+  height: 7vh;
   width: auto;
   object-fit: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 1;
+  left: 5rem;
+  color: white;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  margin-right: 1rem;
+  margin: 1rem;
+  font-size: 20px;
 }
 
 nav a {
-  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  max-width: 6rem;
   color: whitesmoke;
-  background-color: var(--secudario);
+  background-color: transparent;
   border-radius: 0.5rem;
+  transition: 0.3s;
+  font-weight: 60;
+}
+
+#car {
+  background-color: #ef233c;
+  color: whitesmoke;
+  margin-left: 3vw;
+  width: 3rem;
+  border-radius: 0.3rem;
+}
+
+nav a:hover,
+#car:hover {
+  background-color: #ef233c;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-nav a:hover {
-  background-color: #ef233c;
-  transition: 0.6s;
+#lupa {
+  color: var(--secudario);
+  background-color: white;
+  position: absolute;
+  top: 1.3rem;
+  right: 1.4rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#search {
+  border-radius: 0.5rem;
+}
+
+#search:hover {
+  width: 20rem;
+  transition: 1s;
+}
+
+#search::placeholder {
+  color: gray;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
 }
