@@ -1,13 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --body: #edf2f4;
   --primario: #2b2d42;
   --primario1: #02011e;
+  --naranja: #ffa42c;
   --modo-light: #fbf8ee;
   --secudario: #8d99ae;
   --red: #ef233c;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -27,28 +28,30 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--primario);
+  /* background-image: linear-gradient(to right , var(--primario) , var(--primario1) 70%); */
+
   height: 4rem;
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-img {
+header img {
   margin-left: 0.25rem;
-  height: 3.5rem;
+  height: 90%;
   width: auto;
   object-fit: cover;
 }
 
-h1 {
-  color: white;
+header h1 {
+  color: var(--body);
   flex: 1;
 }
 
-#color2 {
-  color: #ffa42c;
+header h1 #color2 {
+  color: var(--naranja);
 }
 
-nav {
+header nav {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -56,7 +59,7 @@ nav {
   font-size: 20px;
 }
 
-nav a {
+header nav a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +72,7 @@ nav a {
   font-weight: 600;
 }
 
-#car {
+header form #car {
   background-color: var(--red);
   color: white;
   margin-left: 3vw;
@@ -78,8 +81,8 @@ nav a {
   transition: 0.2s;
 }
 
-nav a:hover,
-#car:hover {
+header nav a:hover,
+header form #car:hover {
   cursor: pointer;
 }
 
@@ -91,7 +94,7 @@ nav a:hover,
   right: 1.4rem;
 }
 
-form {
+header form {
   display: flex;
   gap: 0.5rem;
 }
@@ -111,4 +114,56 @@ form {
   text-align: center;
   font-size: 15px;
   font-weight: 600;
+}
+
+#menu-mobil {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #search {
+    display: none;
+  }
+
+  #lupa {
+    color: white;
+    right: 5.2rem;
+  }
+
+  #menu-mobil {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    position: absolute;
+    bottom: 100vw;
+  }
+
+  header form #car {
+    height: 3rem;
+  }
+
+  header nav form {
+  }
+
+  #menu-mobil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: transparent;
+  }
+
+  #lupa {
+    color: white;
+    right: 10rem;
+  }
 }
