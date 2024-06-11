@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 
 :root {
   --body: #edf2f4;
@@ -23,7 +24,6 @@ body {
 }
 
 header {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,6 +84,7 @@ header form #car {
 header nav a:hover,
 header form #car:hover {
   cursor: pointer;
+  transform: translateY(-6px);
 }
 
 #lupa {
@@ -120,6 +121,119 @@ header form {
   display: none;
 }
 
+main {
+  margin: 12vh 16vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero {
+  display: flex;
+  box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
+  border-radius: 1rem;
+  /* background-color: #dadcdd; */
+  background: linear-gradient(
+    135deg,
+    hsla(34, 100%, 59%, 1) 52%,
+    hsla(7, 100%, 47%, 1) 100%
+  );
+  transition: all 0.4s;
+}
+
+#hero:hover {
+  box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
+}
+
+#hero article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* border: 1px solid rgb(250, 0, 0); */
+  padding: 2rem;
+  height: 100%;
+  width: 60%;
+}
+
+#hero picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 40%;
+}
+
+#hero p {
+  color: #444446;
+  font-size: 1.1rem;
+  font-style: oblique;
+  font-weight: 00;
+  width: 100%;
+}
+
+#hero p span {
+  font-weight: 900;
+  color: #3f4042;
+}
+
+#about p span {
+  font-weight: 900;
+  color: #02011e;
+}
+
+#img-hero {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 7vw;
+}
+
+#hero h2 {
+  font-size: 2.8rem;
+  padding: 1rem 0;
+  color: whi;
+  font-weight: 700;
+}
+
+#cont-bnt-hero {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: c;
+  gap: 1.5rem;
+}
+
+.boton-hero {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 1rem;
+  background-color: ;
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.boton-hero:hover {
+  background-color: #c7c7c7;
+}
+
+#about {
+  margin: 2rem 0rem;
+  border-radius: 0.75rem;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+#about p {
+  margin: 0 12vw;
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: oblique;
+  color: #606164;
+}
+
 @media (max-width: 900px) {
   #search {
     display: none;
@@ -136,14 +250,19 @@ header form {
 }
 
 @media (max-width: 600px) {
+  header img {
+    display: none;
+  }
+
   h1 {
-    display: flex;
+    display: none;
     flex-direction: column;
     font-size: 1.5rem;
     padding: 1px 0;
   }
 
   header nav a {
+    display: none;
     position: absolute;
     bottom: 100vw;
   }
@@ -154,6 +273,11 @@ header form {
   }
 
   header nav form {
+  }
+
+  #search {
+    display: flex;
+    width: 65vw;
   }
 
   #menu-mobil {
@@ -167,12 +291,15 @@ header form {
   }
 
   #lupa {
-    color: white;
-    right: 8.5rem;
+    color: gray;
+    right: 24vw;
   }
 
   form {
     flex-direction: row-reverse;
     margin: 0;
+  }
+
+  #search::placeholder {
   }
 }
