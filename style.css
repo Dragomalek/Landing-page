@@ -325,6 +325,10 @@ footer a {
 }
 
 @media (max-width: 900px) {
+  main {
+    margin: 0vh 6vw 0vh 6vw;
+  }
+
   #search {
     display: none;
   }
