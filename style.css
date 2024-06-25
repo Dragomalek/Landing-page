@@ -344,6 +344,7 @@ footer a {
     height: 4rem;
     width: 100vw;
     position: fixed;
+    z-index: 1;
   }
 
   header h1 {
@@ -390,11 +391,11 @@ footer a {
   }
 
   main {
-    margin: 0 0 0 0;
+    margin: 0rem 0 0 0;
   }
 
   #pagina1 {
-    padding: 5rem 1rem;
+    padding: 24vh 1rem;
   }
   #hero picture {
     display: none;
@@ -411,8 +412,16 @@ footer a {
     display: none;
   }
 
+  #pagina2 {
+    position: relative;
+    margin-top: 28vh;
+  }
+
   #h2-beneficios {
-    display: none;
+    display: flex;
+    position: absolute;
+    top: -12rem;
+    left: 6rem;
   }
 
   #Beneficios {
