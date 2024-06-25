@@ -395,7 +395,7 @@ footer a {
   }
 
   #pagina1 {
-    padding: 24vh 1rem;
+    padding: 20vh 1rem;
   }
   #hero picture {
     display: none;
@@ -444,7 +444,7 @@ footer a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-top: 24vh;
+    padding: 32vh 1vw 18vh 1vh;
   }
 
   #Contacto article {
