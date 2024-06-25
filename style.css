@@ -415,7 +415,7 @@ footer a {
     display: none;
   }
 
-  #Beneficios h2 {
+  #h2-beneficios {
     display: none;
   }
 
@@ -427,6 +427,11 @@ footer a {
 
     gap: 0rem;
     padding: 1rem;
+    width: 100vw;
+  }
+
+  #Beneficios img {
+    padding: 0 1rem;
     width: 100vw;
   }
 
