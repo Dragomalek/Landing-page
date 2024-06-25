@@ -13,14 +13,14 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <img src="./assets/img/logo.png" alt="logo de la marca" />
 
       <h1>Busco <span id="color2">Oferta</span></h1>
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Contacto</a>
+        <a href="#pagina1">Inicio</a>
+        <a href="#pagina2">Beneficios</a>
+        <a href="#Contacto">Contacto</a>
 
         <form>
           <button id="car">
@@ -42,36 +42,79 @@
     </header>
 
     <main>
-      <section id="hero">
-        <article>
-          <h2>Encontra lo que buscas</h2>
-          <p>
-            Desde electrodomestos hasta articulos del hogar <br />
-            En <span>Busca Oferta</span> Todo lo que lo que necesitas encontralo
-            en un solo lugar
-          </p>
+      <div id="pagina1">
+        <section id="hero">
+          <article>
+            <h2>Encontra lo que buscas</h2>
+            <p>
+              Desde electrodomestos hasta articulos del hogar <br />
+              En <span>Busca Oferta</span> Todo lo que lo que necesitas
+              encontralo en un solo lugar
+            </p>
 
-          <form id="cont-bnt-hero">
-            <button type="button" class="boton-hero">Ingresar</button>
-            <button type="button" class="boton-hero">Crear Cuenta</button>
-          </form>
+            <form id="cont-bnt-hero">
+              <button type="button" class="boton-hero">Ingresar</button>
+              <button type="button" class="boton-hero">Crear Cuenta</button>
+            </form>
+          </article>
+          <picture>
+            <img
+              src="./assets/img/portada.svg"
+              alt="dos personas con bolsas de compras"
+              id="img-hero"
+            />
+          </picture>
+        </section>
+        <section id="about">
+          <p>
+            Nuestro objetivo es que encuentres que encuentres lo que buscas, lo
+            que queres, lo que necesitas y hasta lo que no sabias que querias...
+            y al
+            <span>mejor precio</span>
+          </p>
+        </section>
+      </div>
+
+      <div id="pagina2">
+        <h2 id="h2-beneficios">Beneficios</h2>
+        <section id="Beneficios">
+          <article class="Beneficios-item">
+            <img src="/assets/img/seguridad.svg" alt="" />
+            <p>Compras Seguras</p>
+          </article>
+          <article class="Beneficios-item">
+            <img src="/assets/img/delivery.svg" alt="" />
+            <p>Envio Gratis</p>
+          </article>
+          <article class="Beneficios-item">
+            <img src="/assets/img/metododepago.svg" alt="" />
+            <p>Amplios metodos de pagos</p>
+          </article>
+        </section>
+      </div>
+
+      <section id="Contacto">
+        <article>
+          <h2>Contacto</h2>
+          <p><span>Email:</span> Contacto@Buscaoferta.com</p>
+          <p><span>Tel:</span> 2323-235667</p>
+          <p><span>Direccion:</span> Callefalsa 666</p>
         </article>
         <picture>
-          <img
-            src="./assets/img/portada.svg"
-            alt="dos personas con bolsas de compras"
-            id="img-hero"
-          />
+          <img src="./assets/img/contact.svg" alt="" />
         </picture>
       </section>
-      <section id="about">
-        <p>
-          Nuestro objetivo es que encuentres que encuentres lo que buscas, lo
-          que queres, lo que necesitas y hasta lo que no sabias que querias... y
-          al
-          <span>mejor precio</span>
-        </p>
-      </section>
     </main>
+    <footer>
+      <img
+        src="./assets/img/logo.png"
+        alt="logo de la marca"
+        height="85%"
+        width="auto"
+      />
+      <a href="http://" target="_blank" rel="noopener noreferrer"
+        >Políticas y término</a
+      >
+    </footer>
   </body>
 </html>
